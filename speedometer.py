@@ -35,9 +35,9 @@ class Solution:
 
        # TODO: Write code below to return a list with the solution to the prompt
         for i in ary:
-            for j in ary[ary[i]:]:
+            for j in ary[ary.index(i):]:
                 if i + j == target:
-                    return [ary[i], ary[j]]
+                    return [ary.index(i), ary.index(j)]
         
         return False
 
